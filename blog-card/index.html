@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,10 +11,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
@@ -24,15 +19,36 @@
     </style>
   </head>
   <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
-
-    <!-- Interior
-      Top 5 Living Room Inspirations
-      Curated vibrants colors for your living, make it pop & calm in the same time.
-      Read more -->
+    <div class="container-xl h-screen overflow-auto">
+      <div class="card max-w-[340px] border rounded-lg mx-auto">
+        <img
+          src="img/spacejoy-YqFz7UMm8qE-unsplash.jpg"
+          alt="spacejoy"
+          class="rounded-t-lg"
+        />
+        <div class="px-4 py-6 bg-white rounded-b-lg">
+          <div class="tags">
+            <span
+              class="text-green-700 bg-green-50 border border-green-200 px-2 rounded-xl text-sm-14 font-normal"
+              >Interior</span
+            >
+          </div>
+          <h1 class="text-lg-18 font-semibold text-neutral-900 mt-2">
+            Top 5 Living Room Inspirations
+          </h1>
+          <p
+            class="line-clamp-2 text-base-16 font-medium text-neutral-600 mt-3"
+          >
+            Curated vibrants colors for your living, make it pop & calm in the
+            same time.
+          </p>
+          <div class="mt-4 text-indigo-700 hover:text-indigo-800">
+            <a href="#" target="_blank" rel="noopener noreferrer">Read More </a>
+            <span aria-hidden="true">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Attribute this challenge to yourself! -->
     <div class="credits">
@@ -43,7 +59,7 @@
         >GreatFrontEnd Projects</a
       >. Built by
       <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
-        >Your Name</a
+        >Hari Sharan Bhuju</a
       >.
     </div>
     <script src="js/index.js"></script>
