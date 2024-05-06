@@ -1,0 +1,85 @@
+export const pricingPlanData = {
+  monthly: [
+    {
+      plan: "basic",
+      des: "Access to a curated selection of abstract images",
+      price: 9.99,
+      feature: [
+        "Standard quality images",
+        "Limited to personal use",
+        "Email support",
+      ],
+      popular: false,
+    },
+    {
+      plan: "standard",
+      des: "Next-level Integrations, priced economically",
+      price: 19.99,
+      feature: [
+        "Expanded library with more diverse abstract images",
+        "High-resolution images available",
+        "Suitable for commercial use",
+        "Priority email support",
+        "Advanced analytics",
+      ],
+      popular: true,
+    },
+    {
+      plan: "premium",
+      des: "Experience limitless living for power users",
+      price: 29.99,
+      feature: [
+        "Full access to the entire image library, including exclusive content",
+        "Highest quality images, including premium collections",
+        "Commercial and resale rights",
+        "Dedicated customer support line",
+        "24/7 support response time",
+        "Advanced analytics and insights",
+      ],
+      popular: false,
+    },
+  ],
+  annually: [
+    {
+      plan: "basic",
+      des: "Access to a curated selection of abstract images",
+      price: 6.99,
+      billedPrice: 84,
+      feature: [
+        "Standard quality images",
+        "Limited to personal use",
+        "Email support",
+      ],
+      popular: false,
+    },
+    {
+      plan: "standard",
+      des: "Next-level Integrations, priced economically",
+      price: 15.99,
+      billedPrice: 192,
+      feature: [
+        "Expanded library with more diverse abstract images",
+        "High-resolution images available",
+        "Suitable for commercial use",
+        "Priority email support",
+        "Advanced analytics",
+      ],
+      popular: true,
+    },
+    {
+      plan: "premium",
+      des: "Experience limitless living for power users",
+      price: 25.99,
+      billedPrice: 312,
+      feature: [
+        "Full access to the entire image library, including exclusive content",
+        "Highest quality images, including premium collections",
+        "Commercial and resale rights",
+        "Dedicated customer support line",
+        "24/7 support response time",
+        "Advanced analytics and insights",
+      ],
+      popular: false,
+    },
+  ],
+};
