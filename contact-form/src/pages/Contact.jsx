@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { ContactProvider } from "../context/Contact";
 import BuildingSVG from "../images/building-line.svg";
 import PhoneLineSVG from "../images/phone-line.svg";
 import mailSVG from "../images/mail-line.svg";
@@ -7,8 +8,19 @@ import Success from "../components/Form/Success";
 import Error from "../components/Form/Error";
 
 const Contact = () => {
+  //idle | Loading | Success | error
+  const [status, setStatus] = useState("idle");
+  const [response, setResponse] = useState("null");
+
+  const value = {
+    status,
+    setStatus,
+    response,
+    setResponse,
+  };
+
   return (
-    <>
+    <ContactProvider value={value}>
       <section className="p-4 bg-[#D2D6DB] ">
         <div className="bg-white px-3 py-12 grid grid-cols-4 gap-12 rounded-lg shadow relative  md:px-4 md:py-16 md:grid-cols-6 md:gap-16 xl:grid-cols-12 xl:gap-8 xl:p-[96px] xl:items-center">
           <div className="col-span-4 md:col-span-6 xl:mt-[73px]">
@@ -50,13 +62,12 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-span-4 p-4 border border-neutral-200 rounded-lg shadow-lg md:col-span-6 md:p-8 xl:mt-[73px]">
-            <Form />
-            {/* <Success /> */}
+            {status === "success" ? <Success /> : <Form />}
           </div>
-          {/* <Error /> */}
+          {status === "error" && <Error />}
         </div>
       </section>
-    </>
+    </ContactProvider>
   );
 };
 
