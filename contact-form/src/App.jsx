@@ -1,9 +1,10 @@
 import "./App.css";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <>
-      <div className="bg-red-400">Hari</div>
+      <Contact />
     </>
   );
 }
